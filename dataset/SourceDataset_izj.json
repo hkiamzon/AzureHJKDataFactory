@@ -1,0 +1,27 @@
+{
+	"name": "SourceDataset_izj",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "hjkstorageaccountlink",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "samplelog.txt",
+				"container": "hjkblobdata20201102"
+			},
+			"columnDelimiter": "\t",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"type": "String"
+			}
+		]
+	}
+}
