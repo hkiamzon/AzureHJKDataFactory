@@ -1,0 +1,26 @@
+{
+	"name": "DestinationDataset_izj",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "hjksqldatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Id",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "Log",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Logs"
+		}
+	}
+}
