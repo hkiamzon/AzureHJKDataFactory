@@ -6,9 +6,11 @@
 				"name": "Wait1",
 				"type": "Wait",
 				"dependsOn": [],
-				"userProperties": [],
 				"typeProperties": {
-					"waitTimeInSeconds": 1
+					"waitTimeInSeconds": {
+						"value": "@pipeline().parameters.WaitSeconds",
+						"type": "Expression"
+					}
 				}
 			},
 			{
@@ -61,6 +63,12 @@
 				]
 			}
 		],
+		"parameters": {
+			"WaitSeconds": {
+				"type": "int",
+				"defaultValue": 1
+			}
+		},
 		"annotations": []
 	}
 }
